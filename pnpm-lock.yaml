@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
-  decky-frontend-lib:
-    specifier: ^3.21.8
-    version: 3.21.8
+  deckfaqs:
+    specifier: 'link:'
+    version: 'link:'
   dompurify:
     specifier: ^2.4.4
     version: 2.4.4
@@ -45,6 +49,9 @@ devDependencies:
   '@types/react-dom':
     specifier: ^18.0.11
     version: 18.0.11
+  decky-frontend-lib:
+    specifier: ^3.21.8
+    version: 3.21.8
   prettier:
     specifier: 2.7.1
     version: 2.7.1
@@ -223,7 +230,7 @@ packages:
 
   /decky-frontend-lib@3.21.8:
     resolution: {integrity: sha512-I45KWzoTSakUcsN7drHhiOc+rYKYygIsuYTHqc8DbpPDJvUx6xlU4t7D2TMrj9o/xS/V3WY9N/pX8eF6AcGT1g==}
-    dev: false
+    dev: true
 
   /deepmerge@4.3.0:
     resolution: {integrity: sha512-z2wJZXrmeHdvYJp/Ux55wIjqo81G5Bp4c+oELTW+7ar6SogWHajt5a9gO3s3IDaGSAXjDk0vlQKN3rms8ab3og==}
