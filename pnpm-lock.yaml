@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  deckfaqs:
-    specifier: 'link:'
-    version: 'link:'
   dompurify:
     specifier: ^2.4.4
     version: 2.4.4
