@@ -86,7 +86,7 @@ export const getContent = async (
                     true,
                     code
                 );
-                htmlResult = result.result.result;
+                htmlResult = result.result;
             } catch (e) {}
         }
         if (htmlResult) break;
@@ -123,7 +123,7 @@ export const getGuideHtml = async (
                     getGuideCode
                 );
 
-                let htmlBody = result.result.result;
+                let htmlBody = result.result;
                 if (htmlBody) {
                     htmlBody = JSON.parse(htmlBody);
                     htmlResult = DOMPurify.sanitize(htmlBody.guide ?? '');

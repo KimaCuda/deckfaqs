@@ -45,11 +45,11 @@ export const ResultList = ({ serverApi }: DefaultProps) => {
                     for (const faq of faqs) {
                         const faqUrl = faq[1],
                             title = faq[2],
-                            version = faq[4],
+                            author = faq[3],
                             date = faq[5];
                         guides.push({
                             url: `${url}${faqUrl}`,
-                            text: `${title} - ${version} - ${date}`,
+                            text: `${title} by ${author} (${date})`,
                         });
                     }
                 }

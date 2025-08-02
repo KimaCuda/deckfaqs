@@ -1,29 +1,51 @@
 const faqsNightmareRegex =
-    /(\/faqs\/\d+)\">(.*?)<\/a>[\S\n\t ]*?(rec)?\">\n.*(v\.[^,]*).*title=\"(.*)\"/gm;
+    /href="([^"]*\/faqs\/\d+)">(.*?)<\/a>[\s\S]*?by&nbsp;<a[^>]+>(.*?)<\/a>[\s\S]*?<div class="meta float_r(?: rec)?">[\s\S]*?(v\.[^,]*),[\s\S]*?title="([^"]*)"/gm;
 
 const ignoreSteam = [1887720, 1070560, 1391110, 228980];
 const ignoreNonSteam = [
     'EmulationStation-DE-x64_SteamDeck',
     'Google Chrome',
     'Cemu',
+    'Cemu (Emulator)',
     'Citra',
+    'Citra (Emulator)',
+    'Desktop',
     'Dolphin (emulator)',
     'DuckStation (Emulator)',
+    'Jellyfin Media Player',
     'PCSX2',
     'PPSSPP',
+    'PPSSPP (Emulator)',
     'PrimeHack',
     'RetroArch',
     'RPCS3',
+    'RPCS3 (Emulator)',
     'xemu (emulator)',
     'Yuzu',
+    'yuzu (Emulator)',
     'Moonlight',
     'pcsx2-qt',
     'Ryujinx',
+    'Ryujinx (Emulator)',
     'ScummVM',
     'Vita3K',
     'Chiaki',
     'Heroic Games Launcher',
     'MAME',
+    'MAME (Emulator)',
+    'melonDS',
+    'melonDS  (Emulator)',
+    'mGBA',
+    'mGBA (Emulator)',
+    'Model 2',
+    'Model 2 (Emulator)',
+    'Proton 8.0',
+    'Proton 9.0',
+    'Proton EasyAntiCheat Runtime',
+    'Proton Experimental',
+    'Steam Big Picture',
+    'Steam Linux Runtime 3.0 (sniper)',
+    'Supermodel (Emulator)',
 ];
 
 export { ignoreSteam, ignoreNonSteam, faqsNightmareRegex };
